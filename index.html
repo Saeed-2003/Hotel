@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Library Bootstrap -->
+    <link rel="stylesheet" href="Lib/Bootstrap/css/bootstrap.min.css" />
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="Lib/fontawesome-free-6.1.1-web/css/all.min.css"
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Style js fade -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Style css -->
+    <link rel="stylesheet" href="asset/css/style.css" />
+
+    <title>Hotel</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <section>
+      <header>
+        <!-- Start Navbar -->
+
+        <nav class="navbar navbar-expand-md d-flex justify-content-baseline">
+          <div class="container">
+            <a href="#" class="navbar-brand text-white">Hotel Web</a>
+            <button
+              class="navbar-toggler"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbar"
+            >
+              <i class="fa-solid fa-bars"></i>
+            </button>
+            <div
+              class="collapse navbar-collapse justify-content-end"
+              id="navbar"
+            >
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a href="#home" class="nav-link text-light">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#service" class="nav-link text-light"
+                    >Our services</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="#About Us" class="nav-link text-light">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#portfolio" class="nav-link text-light">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#contact us" class="nav-link text-light"
+                    >Contact Us</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    href="#login"
+                    class="nav-link text-light bg-dark rounded-pill ms-lg-3 p-2 button-width"
+                    >Login <i class="fa-solid fa-right-to-bracket"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <!-- End Navbar -->
+
+        <!-- Start Title  -->
+        <div class="container" data-aos="flip-left" data-aos-duration="2000">
+          <div
+            class="mid d-flex justify-content-center align-content-center flex-column flex-wrap"
+          >
+            <div class="rounded color">
+              <div class="row align-items-baseline">
+                <div class="col one col-sm-4">
+                  <h4 class="text-white">Hotel</h4>
+                  <span class="text-white-50 d-none d-md-block d-lg-block"
+                    >Created By: Saeed</span
+                  >
+                </div>
+                <div class="col two">
+                  <p class="text-white-50 d-none d-lg-block">
+                    This site is made for you to help you find your hotel.
+                  </p>
+                </div>
+                <div class="col col-sm-4">
+                  <button class="btn btn-secondary">Learn more</button>
+                </div>
+              </div>
+              <input
+                type="text"
+                class="form-control width mt-3"
+                placeholder="Find Your Hotel.."
+              />
+            </div>
+          </div>
+        </div>
+        <!-- End Title  -->
+      </header>
+    </section>
+    <!-- End Header -->
+
+    <!-- Start service -->
+    <section id="service" data-aos="fade-down" data-aos-duration="1000">
+      <div class="container my-5">
+        <div class="row">
+          <div class="col-md-12 text-center py-3">
+            <h3>Our services</h3>
+          </div>
+
+          <!-- Card One -->
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card">
+              <div class="card-img-top">
+                <img
+                  src="asset/img/product_1.jpg"
+                  alt="Gaza hotel"
+                  class="img-fluid rounded"
+                />
+              </div>
+              <div class="card-body">
+                <h4 class="card-title d-inline">Gaza Hotel</h4>
+                <span class="badge bg-success rounded-pill">open</span>
+                <p class="card-subtitle text-muted mt-1">palestine</p>
+                <p class="mt-3">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Earum, magni!
+                </p>
+                <button
+                  class="btn btn-primary mt-1"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal_1"
+                >
+                  show more
+                </button>
+                <div class="modal fade" id="modal_1">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <img
+                          src="asset/img/product_1.jpg"
+                          alt="Gaza hotel"
+                          class="img-fluid rounded modal-title"
+                        />
+                      </div>
+                      <div class="modal-body">
+                        <h5 class="fw-bold">Gaza Hotel</h5>
+                        <p>palestine</p>
+                        <p>
+                          Lorem ipsum dolor, sit amet consectetur adipisicing
+                          elit. Dolore, possimus.
+                        </p>
+                      </div>
+                      <div class="modal-footer">
+                        <button class="btn btn-primary">Reservation</button>
+                        <button class="btn btn-danger" data-bs-dismiss="modal">
+                          Close
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card Two -->
+          <div class="col-lg-4 col-md-6 col-sm-12 mt-lg-0 mt-md-0 my-3">
+            <div class="card">
+              <div class="card-img-top">
+                <img
+                  src="asset/img/product_2.jpg"
+                  alt="Gaza hotel"
+                  class="img-fluid rounded"
+                />
+              </div>
+              <div class="card-body">
+                <h4 class="card-title d-inline">maldive</h4>
+                <span class="badge bg-danger rounded-pill">close</span>
+                <p class="card-subtitle text-muted mt-1">the maldive Islands</p>
+                <p class="mt-3">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Earum, magni!
+                </p>
+                <button
+                  class="btn btn-primary mt-2"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal_2"
+                >
+                  show more
+                </button>
+                <div class="modal fade" id="modal_2">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <img
+                          src="asset/img/product_2.jpg"
+                          alt="Gaza hotel"
+                          class="img-fluid rounded"
+                        />
+                      </div>
+                      <div class="modal-body">
+                        <h5 class="fw-bold">maldive</h5>
+                        <p class="text-muted">the maldive Islands</p>
+                        <p>
+                          Lorem ipsum dolor, sit amet consectetur adipisicing
+                          elit. Dolore, possimus.
+                        </p>
+                      </div>
+                      <div class="modal-footer">
+                        <button class="btn btn-primary">Reservation</button>
+                        <button class="btn btn-danger" data-bs-dismiss="modal">
+                          Close
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card Three -->
+          <div class="col-lg-4 col-md-6 col-sm-12 mt-lg-0 mt-md-3">
+            <div class="card">
+              <div class="card-img-top">
+                <img
+                  src="asset/img/product_3.jpg"
+                  alt="Gaza hotel"
+                  class="img-fluid rounded"
+                />
+              </div>
+              <div class="card-body">
+                <h4 class="card-title d-inline">Jacksonville</h4>
+                <span class="badge bg-success rounded-pill">open</span>
+                <p class="text-muted mt-1">America</p>
+                <p class="mt-3">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Earum, magni!
+                </p>
+                <button
+                  class="btn btn-primary mt-1"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal_3"
+                >
+                  show more
+                </button>
+                <div class="modal fade" id="modal_3">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <img
+                          src="asset/img/product_3.jpg"
+                          alt="Gaza hotel"
+                          class="img-fluid rounded modal-title"
+                        />
+                      </div>
+                      <div class="modal-body">
+                        <h5 class="fw-bold">Jacksonville</h5>
+                        <p class="text-muted mt-1">America</p>
+
+                        <p>
+                          Lorem ipsum dolor, sit amet consectetur adipisicing
+                          elit. Dolore, possimus.
+                        </p>
+                      </div>
+                      <div class="modal-footer">
+                        <button class="btn btn-primary">Reservation</button>
+                        <button class="btn btn-danger" data-bs-dismiss="modal">
+                          Close
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End service -->
+
+    <!-- Start About Us -->
+    <section class="mt-5 pt-5" data-aos="fade-down" data-aos-duration="1000">
+      <div class="container my-5">
+        <div class="row">
+          <div class="col-lg-5 col-md-6 col-sm-12">
+            <img
+              src="asset/img/about.jpg"
+              alt="aboutUs"
+              class="img-fluid rounded"
+            />
+          </div>
+          <div
+            class="col-lg-7 col-md-6 col-sm-12 my-lg-4 mt-md-0"
+            id="About Us"
+          >
+            <h2 class="my-lg-4 mt-4 mt-md-0">About Us:</h2>
+            <p class="lh-base lead mb-lg-5">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga
+              ducimus ex excepturi exercitationem distinctio! Ab, dolores nulla
+              optio corrupti molestiae unde! Ducimus, esse mollitia. Iste
+              recusandae at modi aliquam eveniet. ipsum dolor sit amet
+              consectetur adipisicing elit. Magni, perferendis illum placeat sed
+              est nemo sapiente? Nisi expedita illum in atque voluptatum
+              cupiditate debitis, itaque quas exercitationem corrupti tempora
+              fuga repudiandae. Molestiae, quam laudantium tenetur ab minus
+              voluptas commodi pariatur, eum fuga perspiciatis dolores sequi
+              aliquam.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End About Us -->
+
+    <!-- Start Portfolio -->
+    <section id="portfolio" data-aos="fade-down" data-aos-duration="1000">
+      <div class="container mt-5 pt-5">
+        <div class="row align-content-around">
+          <div class="col-md-12 text-center my-3">
+            <h2 class="mb-5">Portfolio</h2>
+            <div class="row">
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="position-relative">
+                  <img
+                    src="asset/img/portfolio_1.jpg"
+                    alt="Portfolio"
+                    class="rounded-1 img-fluid mt-3"
+                  />
+
+                  <div class="title position-absolute">
+                    <h3>Maldive Islands</h3>
+                    <p>Welcome To Maldive Islands</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="position-relative">
+                  <img
+                    src="asset/img/portfolio_2.jpg"
+                    alt="Portfolio"
+                    class="rounded-1 img-fluid mt-3"
+                  />
+                  <div class="title position-absolute">
+                    <h3>America Airport</h3>
+                    <p>Welcome To America Airport</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="position-relative">
+                  <img
+                    src="asset/img/portfolio_3.jpg"
+                    alt="Portfolio"
+                    class="rounded-1 img-fluid mt-3"
+                  />
+                  <div class="title position-absolute">
+                    <h3>Gaza Hotles</h3>
+                    <p>Welcome To Gaza Hotels</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="position-relative">
+                  <img
+                    src="asset/img/portfolio_4.jpg"
+                    alt="Portfolio"
+                    class="rounded-1 img-fluid mt-3"
+                  />
+                  <div class="title position-absolute">
+                    <h3>Recreation Hotels</h3>
+                    <p>Welcome To Recreation Hotels</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="position-relative">
+                  <img
+                    src="asset/img/portfolio_5.jpg"
+                    alt="Portfolio"
+                    class="rounded-1 img-fluid mt-3"
+                  />
+                  <div class="title position-absolute">
+                    <h3>calm sleep</h3>
+                    <p>You can sleep in complete peace among nature</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="position-relative">
+                  <img
+                    src="asset/img/portfolio_6.jpg"
+                    alt="Portfolio"
+                    class="rounded-1 img-fluid mt-3"
+                  />
+                  <div class="title position-absolute">
+                    <h3>family sessions</h3>
+                    <p>Classy and luxurious sessions</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Portfolio -->
+
+    <!-- Start Contact Us -->
+    <section
+      id="contact us"
+      class="my-5"
+      data-aos="fade-down"
+      data-aos-duration="1000"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h2>Contact us</h2>
+            <p class="mx-auto mb-5">
+              Do you have any questions? Please do not hesitate to contact us
+              directly. Our team will come back to you within a matter of hours
+              to help you.
+            </p>
+          </div>
+          <div class="row">
+            <form action="">
+              <div class="col-md-12 mb-3">
+                <div class="input-group">
+                  <div class="input-group-text">
+                    <i class="fa-solid fa-envelope"></i>
+                  </div>
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Email"
+                  />
+                </div>
+              </div>
+
+              <div class="col-md-12 mb-3">
+                <div class="input-group">
+                  <div class="input-group-text">
+                    <i class="fa-solid fa-comment"></i>
+                  </div>
+                  <input
+                    type="text"
+                    id="Fname"
+                    class="form-control"
+                    placeholder="subject"
+                  />
+                </div>
+              </div>
+
+              <div class="col-md-12">
+                <textarea
+                  class="form-control"
+                  rows="3"
+                  placeholder="Your Message..."
+                ></textarea>
+              </div>
+
+              <div class="col-lg-12">
+                <input
+                  type="submit"
+                  class="btn btn-secondary mt-3"
+                  value="submit"
+                />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Contact Us -->
+
+    <!-- Start Footer -->
+    <section>
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6 col-md-3 item">
+              <h4 class="mt-0 mb-3">Services</h4>
+              <ul>
+                <li><a href="#">Hotel Room</a></li>
+                <li><a href="#">Find Your Room </a></li>
+                <li><a href="#">Hosting</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-6 col-md-3 item">
+              <h4>About</h4>
+              <ul>
+                <li><a href="#">Hotel Web</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Careers</a></li>
+              </ul>
+            </div>
+            <div class="col-md-6 item text">
+              <h4>Hotel Web</h4>
+              <p>
+                Praesent sed lobortis mi. Suspendisse vel placerat ligula.
+                Vivamus ac sem lacus. Ut vehicula rhoncus elementum. Etiam quis
+                tristique lectus. Aliquam in arcu eget velit pulvinar dictum vel
+                in justo.
+              </p>
+            </div>
+            <div class="col item social">
+              <a href="#"><i class="fa-brands fa-facebook"></i></a
+              ><a href="#"><i class="fa-brands fa-twitter"></i></a
+              ><a href="#"><i class="fa-brands fa-snapchat"></i></a
+              ><a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+          <p class="copyright">Hotel Web © 2022</p>
+        </div>
+      </footer>
+    </section>
+    <!-- End Footer -->
+
+    <script src="Lib/Bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="Lib/jQuery/jquery.js"></script>
+    <script src="asset/js/main.js"></script>
+    <!-- Style Js Fade -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
